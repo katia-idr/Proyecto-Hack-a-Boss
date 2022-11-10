@@ -1,0 +1,25 @@
+section.infoContainer {
+  background-color: #829ca3;
+  min-height: 20rem;
+  width: 25rem;
+  border-radius: 10px;
+  margin: 7.5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+section.infoContainer p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+section.infoContainer svg {
+  margin-bottom: 1rem;
+}
+
+button.principal {
+  color: black;
+}

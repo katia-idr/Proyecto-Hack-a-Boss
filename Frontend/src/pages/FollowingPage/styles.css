@@ -1,0 +1,25 @@
+section.container {
+  background-color: #829ca3;
+  height: 15rem;
+  width: 25rem;
+  border-radius: 10px;
+  margin: 7.5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+section.container p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+section.container svg {
+  margin-bottom: 1rem;
+}
+
+section.followingUserListContainer {
+  margin-bottom: 1rem;
+}

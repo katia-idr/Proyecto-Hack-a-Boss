@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto, sans-serif;
+  justify-content: center;
+  align-items: center;
+
+  --red-color: #9e2a2b;
+
+  --blue-color: #335c67;
+}
+
+main {
+  flex-grow: 1;
+  width: 70vw;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  border-style: none;
+}
+
+button.principal {
+  background-color: var(--red-color);
+  border-radius: 12px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  width: fit-content;
+  padding: 0 1rem;
+  height: 2.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+button.principal:hover {
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+svg {
+  width: 100%;
+  display: block;
+}
+
+.secundaryButton {
+  background-color: var(--blue-color);
+  border-radius: 12px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  width: fit-content;
+  padding: 0 1rem;
+  height: 1.5rem;
+  font-size: smaller;
+  margin-bottom: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

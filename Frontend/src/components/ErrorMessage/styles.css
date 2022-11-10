@@ -1,0 +1,21 @@
+.errorContainer {
+  background-color: var(--red-color);
+  border-radius: 10px;
+  height: 8rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: auto;
+  padding: 1rem;
+}
+
+.error-message {
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  text-align: center;
+}

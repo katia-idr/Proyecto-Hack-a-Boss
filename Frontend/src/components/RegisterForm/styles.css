@@ -1,0 +1,39 @@
+.registerUserFormContainer {
+  width: 45rem;
+  background: #829ca3;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+}
+
+.registerUserForm {
+  padding: 2rem;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.registerUserForm input {
+  border-radius: 0.6rem;
+  padding: 0.5rem;
+  width: 35rem;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+form > p {
+  padding: 0.5rem;
+}
+
+.registerUserMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registerUserFormContainer img {
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+}

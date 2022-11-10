@@ -1,0 +1,25 @@
+.loginFormMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginFormContainer {
+  width: 45rem;
+  background-color: #829ca3;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+  padding: 3rem;
+}
+
+button.secundaryButton:hover {
+  color: white;
+  border-radius: 12px;
+}
+
+.loginFormContainer p {
+  margin-bottom: 0.5rem;
+}

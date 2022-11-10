@@ -1,0 +1,22 @@
+.bookmark {
+  left: 0.5rem;
+}
+
+.bookmark.animate {
+  animation: favorite 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes favorite {
+  25% {
+    transform: scale(1.2);
+  }
+
+  50% {
+    transform: scale(0.8);
+  }
+
+  75% {
+    transform: scale(1.2);
+  }
+}

@@ -1,0 +1,57 @@
+section.userProfileAvatar {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+figure.avatarImage {
+  height: 65%;
+}
+
+img.userProfileAvatar {
+  border-radius: 50%;
+}
+
+section.userProfileInfo {
+  width: 100%;
+  text-align: left;
+  align-self: flex-start;
+}
+
+section.userProfileInfo h3.name {
+  color: var(--blue-color);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+section.userProfileInfo h4 {
+  color: var(--blue-color);
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+section.userProfileInfo h4.userName {
+  color: black;
+}
+
+section.userProfileInfo h4.userBioTitle,
+section.userProfileInfo h4.userWebTittle {
+  font-weight: bold;
+}
+section.userProfileInfo p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+section.userProfileInfo a {
+  color: var(--blue-color);
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}

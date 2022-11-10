@@ -1,0 +1,18 @@
+.container,
+.post {
+  background-color: #829ca3;
+  height: 15rem;
+  width: 25rem;
+  margin: 3rem auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.post p {
+  margin-top: 2rem;
+  text-transform: uppercase;
+}

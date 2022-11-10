@@ -1,0 +1,135 @@
+.modalBackground {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer {
+  width: 65vw;
+
+  border-radius: 12px;
+  background-color: #829ca3;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 25px;
+}
+
+.closeButton {
+  align-self: flex-start;
+  position: relative;
+  /*   top: 3rem; */
+  left: 97%;
+}
+
+.postSlider {
+  width: 50%;
+}
+
+.postData {
+  width: 50%;
+  color: white;
+  align-self: flex-start;
+}
+
+.postData section {
+  margin-bottom: 0.7rem;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: row;
+}
+
+.userAvatar,
+.commentsAvatar {
+  margin-right: 0.6rem;
+
+  height: 2rem;
+  width: 2rem;
+}
+
+.authorName {
+  font-weight: bold;
+  text-transform: uppercase;
+
+  color: white;
+
+  font-size: 1.2rem;
+}
+.authorUsername,
+.commentUsername {
+  font-size: 1rem;
+
+  text-transform: lowercase;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+.authorComment {
+  margin-bottom: 0.5rem;
+}
+.hashtag {
+  font-weight: light;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: black;
+}
+
+.commentsTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.usersComments {
+  max-height: 26vh;
+
+  overflow-y: auto;
+}
+.userComment {
+  display: flex;
+  flex-direction: row;
+}
+
+form > textarea.commentForm {
+  border-style: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 4rem;
+  padding: 0.5rem;
+  overflow-y: auto;
+}
+
+form > textarea.commentForm::-webkit-scrollbar {
+  display: none;
+}
+
+form > button.principal {
+  color: black;
+}
+
+.icons {
+  position: relative;
+}
+
+.icons button {
+  width: 4rem;
+  position: absolute;
+  bottom: 1rem;
+}
+
+.infoLikesFavorited {
+  margin-top: 0.8rem;
+}
+
+button.eliminar {
+  margin: auto;
+}

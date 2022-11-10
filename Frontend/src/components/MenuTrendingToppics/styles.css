@@ -1,0 +1,21 @@
+.menuTrendingToppic {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.menuTrendingToppic button {
+  background-color: var(--blue-color);
+  color: white;
+  height: 3.5rem;
+  border-radius: 5px;
+  flex-grow: 1;
+  flex-basis: 9rem;
+}
+
+.menuTrendingToppic button:hover {
+  background-color: #829ca3;
+}

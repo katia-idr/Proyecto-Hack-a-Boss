@@ -1,0 +1,629 @@
+{
+	"info": {
+		"_postman_id": "9c2d63e0-2a40-4030-ac59-b37120d231ac",
+		"name": "Hack_a_Gram",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23328755"
+	},
+	"item": [
+		{
+			"name": "Likes",
+			"item": [
+				{
+					"name": "userLikesPost",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{server}}/post/3/like",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"post",
+								"3",
+								"like"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postIslikedbyuser",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{server}}/post/3/isLiked",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"post",
+								"3",
+								"isLiked"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "post",
+			"item": [
+				{
+					"name": "getPost",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/posts/9",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"posts",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPosts",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{server}}/posts?search=rojo",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"posts"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "rojo"
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "newPost",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "post_photo",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								},
+								{
+									"key": "authorComment",
+									"value": "Post de prueba con usuario publico",
+									"type": "text"
+								},
+								{
+									"key": "hashtag",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "post_photo",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								},
+								{
+									"key": "post_photo",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								},
+								{
+									"key": "post_photo",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								},
+								{
+									"key": "post_photo",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{server}}/posts/new",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"posts",
+								"new"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletePost",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/posts/7",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"posts",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "newUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Pepe\",\r\n    \"username\":\"Pepito Grillo\",\r\n    \"email\":\"pepito@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/register",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"pepito@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/login",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UserProfile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{tokenLeire}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{server}}/user/10",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"user",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit USer",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "bio",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "url",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "oldPass",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "newPass",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "privacy",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "public",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{server}}/user/data",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"user",
+								"data"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/user/4/delete",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"user",
+								"4",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comment",
+			"item": [
+				{
+					"name": "New Comment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"body\":\"Me gusta mucho\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/comments/new/1",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"comments",
+								"new",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Favorites",
+			"item": [
+				{
+					"name": "selectFavorites",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{server}}/post/9/favorite",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"post",
+								"9",
+								"favorite"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getFavorites",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{server}}/favorites?search=playa",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"favorites"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "playa"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Follows",
+			"item": [
+				{
+					"name": "getFollows",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{server}}/follower",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"follower"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "select follower",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{server}}/user/3/follower",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"user",
+								"3",
+								"follower"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "server",
+			"value": ""
+		},
+		{
+			"key": "token",
+			"value": ""
+		},
+		{
+			"value": "",
+			"disabled": true
+		},
+		{
+			"value": "",
+			"disabled": true
+		},
+		{
+			"value": "",
+			"disabled": true
+		}
+	]
+}

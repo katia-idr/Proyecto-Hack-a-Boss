@@ -1,0 +1,32 @@
+.header {
+  background-color: white;
+  color: var(--red-color);
+  border-bottom: 2px solid var(--red-color);
+  width: 100%;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+header > a > img {
+  height: 3rem;
+  margin: 0.5rem 1rem;
+}
+
+.header-menu {
+  display: flex;
+}
+
+.header-button {
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+  margin: 0 1rem;
+}
+
+.header-button > svg {
+  width: 1.7rem;
+  height: 1.7rem;
+  fill: var(--red-color);
+}
